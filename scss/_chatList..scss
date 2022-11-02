@@ -1,0 +1,41 @@
+nav {
+    @include set-box (100%, 70px);
+    background-color: $blackop;
+    position: fixed;
+    padding-top: 50px;
+
+    .nav_list {
+        .nav_btn {
+            padding: 14px 0;
+            text-align: center;
+            color: $gray1;
+
+            &.active {
+                color: #000;
+            }
+        }
+    }
+}
+
+.chats {
+
+    margin-left: 70px;
+}
+
+.previews {
+    .preview_list {}
+}
+
+a.preview_wrap {
+    color: #000;
+
+    &:first-child>.preview {
+        background-color: #f9f9f9;
+    }
+
+    .preview {
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}
