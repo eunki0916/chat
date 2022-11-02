@@ -7,7 +7,7 @@
 .chat_screen {
     height: calc(100% - 140px);
     overflow: auto;
-    background-color: #ccd1e3;
+    background: #ccd1e3;
 
     .chat_screen_bar {
         position: sticky;
@@ -35,6 +35,33 @@
             display: flex;
             align-items: flex-end;
             margin-left: 10px;
+            font-size: 0.8em;
+            white-space: nowrap;
+        }
+    }
+}
+
+.bubble_wrap_me {
+    .chat_nick {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .bubble_content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 20px;
+
+
+
+        .bubble {
+            width: 80%;
+        }
+
+        .bubble_time {
+            display: flex;
+            align-items: flex-end;
+            margin-right: 10px;
             font-size: 0.8em;
             white-space: nowrap;
         }

@@ -165,7 +165,7 @@ a.preview_wrap .preview:hover {
 .chat_screen {
   height: calc(100% - 140px);
   overflow: auto;
-  background-color: #ccd1e3;
+  background: #ccd1e3;
 }
 .chat_screen .chat_screen_bar {
   position: sticky;
@@ -187,6 +187,26 @@ a.preview_wrap .preview:hover {
   display: flex;
   align-items: flex-end;
   margin-left: 10px;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+.bubble_wrap_me .chat_nick {
+  text-align: end;
+  margin-right: 20px;
+}
+.bubble_wrap_me .bubble_content {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+}
+.bubble_wrap_me .bubble_content .bubble {
+  width: 80%;
+}
+.bubble_wrap_me .bubble_content .bubble_time {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10px;
   font-size: 0.8em;
   white-space: nowrap;
 }
@@ -230,14 +250,15 @@ a.preview_wrap .preview:hover {
   padding: 16px;
   position: relative;
 }
-.preview .preview_column .preview_pic {
+
+.preview_column .preview_pic {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: #422d20;
+  background: url("../img/111500268.2.jpg") no-repeat center center/cover;
   margin-right: 16px;
 }
-.preview .preview_column .preview_nick {
+.preview_column .preview_nick {
   width: 50vw;
   font-size: 0.9em;
   margin-bottom: 5px;
@@ -245,10 +266,10 @@ a.preview_wrap .preview:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.preview .preview_column .chat_nick {
+.preview_column .chat_nick {
   font-size: 1em;
 }
-.preview .preview_column .preview_msg {
+.preview_column .preview_msg {
   width: 50vw;
   font-size: 0.85em;
   color: #747474;
@@ -258,12 +279,19 @@ a.preview_wrap .preview:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.preview .preview_column .preview_time {
+.preview_column .preview_time {
   position: absolute;
   right: 30px;
   top: 15px;
   font-size: 0.7em;
   color: #a09a9a;
+}
+
+.preview_me {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 16px;
+  position: relative;
 }
 
 .bubble {
@@ -286,6 +314,28 @@ a.preview_wrap .preview:hover {
   left: -10px;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #fff;
+}
+
+.bubble_me {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background-color: #FAE100;
+  position: relative;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 0.9em;
+}
+.bubble_me::before {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #FAE100;
 }
 
 /*# sourceMappingURL=main.css.map */
