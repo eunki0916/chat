@@ -1,0 +1,11 @@
+$bg-color: #FAE100;
+$main-color: #422d20;
+$gray1 :#a09a9a;
+$gray2 :#d5d5d5;
+$blackop : rgba(0, 0, 0, 0.2);
+
+@mixin set-box ($height, $width : 100%, $border-radius: 0) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}

@@ -203,6 +203,7 @@ a.preview_wrap .preview:hover {
   border: none;
   outline: none;
   margin-bottom: 8px;
+  padding: 10px;
 }
 .chat_form .chat_form_util {
   display: flex;
